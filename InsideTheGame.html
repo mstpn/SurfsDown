@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang=”en”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/customstyles/StyleSheet.css">
+	<title>Improving - Inside the Game</title>
+</head>
+<body>
+	<nav role="navigation">
+			<a href="Index.html" title="Link to the SurfsDown homepage">Home</a>
+			<a href="WhatIsSurfing.html" title="Link to What is Surfing page">What is Surfing?</a>
+			<button class="dropdown-btn">Getting Started
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="GettingStarted.html" title="Link to Getting Started page">The Basics</a>
+				<button class="dropdown-btn">Guides
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="GameSettings.html" title="Link to Game Settings and Servers">Game Settings &amp; Servers</a>
+					<a href="BeginnersGuide.html" title="Link to Beginners Guide">Beginners Guide</a>
+				</div>
+			</div>
+			<a href="Game.html" title="Link to the page containing a JavaScript Game">Interactive Game</a>
+			<button class="dropdown-btn">How To Improve
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Improving.html" title="Link to page on how to improve at surfing">Improving at Surfing</a>
+				<button class="dropdown-btn">Inside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="InsideTheGame.html" title="Link to Improving Inside the Game">In-Game Improvement</a>	
+				</div>
+				<button class="dropdown-btn">Outside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="OutsideTheGame.html" title="Link to Improving Outside the Game">External Improvement</a>
+				</div>
+			</div>	
+			<a href="ServerList.html" title="Link to list of Surf servers">Server List</a>
+			<button class="dropdown-btn">Related Topics
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Related.html" title="Link to page with topics tangentially related to Surfing">Surf Related</a>
+				<button class="dropdown-btn">Topics
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="MapMaking.html" title="Link to Map Making">CS:GO Map Making</a>
+					<a href="InCSGO.html" title="Link to Related Topics inside CS:GO">In-Game</a>
+					<a href="OutsideCSGO.html" title="Link Related Topics outside CS:GO">Outside CS:GO</a>
+				</div>	
+			</div>
+	</nav>
+	<main role="main">
+		<a href="Index.html"><img src="Images/SurfsDownLogo1920w250h.jpg" width="1900" alt="Banner Logo for SurfsDown Site"></a>
+		<div class="topbar">
+			<div class="menu-btn" onclick="toggleNav(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<select name="themepick" id="themepick" title="Cookies must be enabled for this site to switch themes">
+	  			<option value="StyleSheet" selected>Dark Theme</option>
+				<option value="CompatibilityStyleSheet">Compatibility Theme</option>
+			</select>
+			</div>
+		</div>
+	<div class="row">
+		<div class="col-12 col-t-12">
+			<h1>Improving - Inside the Game</h1>
+			<p>
+				There are many avenues to success in surfing, and I am going to lay out my three top tips for improvement here.
+			</p>
+			<br>
+			<h2>1: Spectate Other Players</h2>
+			<p>
+				The number one mistake that people make when starting out is not spectating more advanced players. Whether it is through a do-it-yourself mentality, or the belief that they don't need help to succeed, new players don't watch other players enough. Spectating provides many benefits, not limited to:
+				<ul>
+					<li>Learning the map. This is crucial when you start out, as you don't have a good feel for the correct lines to take in order to make it through the map. Sometimes maps are confusing, and spectating someone is the only way to have a clue where to go!</li>
+					<li>Learning how bad you are. This is where it helps to watch EVERYONE, not just the better players. Seeing people at your own skill, when you don't have to concentrate on actually playing the game, can give you an insight as to where you go wrong. You will notice how chunky a less experienced players movements are, and how hard they hit the ramp.</li>
+				</ul>
+			</p>
+			<h2>2: Play lots!</h2>
+			<p>
+				This might be something that "goes without saying", but the only way to get better is to grind out the hours in this game. All the spectating in the world will do nothing if you never take what you learned and try it yourself. This is where 24/7 maps can be helpful, to really get in the rythym of a certain map, and how to execute everything properly. The depth over breadth idea certainly applies to surfing. If you can master one map, you can master another. Being only ok at every single map will be a lot less rewarding, and hinder your progress in the long run.
+			</p>
+			<h2>3: Use server commands/hotkeys</h2>
+			<p>
+				Restarting is an inevitable part of surfing. You don't have to wait to fall to your death to restart though. Try these helpful commands in game, the key binds will require use of the developer console.
+			</p>
+			<ul>
+				<li>Restart to the beginning of a stage.
+					<ul>
+						<li>Used when you want the whole map to restart (stage maps, also works in linear).</li>
+						<li>Open the chat, and type (without quotes) "!r", "!restart", or "/restart" depending on your server.</li>
+						<li>To make a key bind that will do this without typing in chat, open the developer console, then enter <em>bind j "sm_restart"</em>. You can use any keyboard letter, t is just an example. I use my F1 key for instance.</li>
+					</ul>
+				</li>
+				<li>Restart to the beginning of a stage.
+					<ul>
+						<li>Used when you want to only reset a the current stage in a stage map (will reset whole map in linear).</li>
+						<li>Open the chat, and type (without quotes) "!back" or "/back" depending on your server.</li>
+						<li>To make a key bind that will do this without typing in chat, open the developer console, then enter <em>bind k "sm_back"</em>. Again, you can use any keyboard letter, k is just an example.</li>
+					</ul>
+				</li>
+				<li>Teleport to a certain stage.
+					<ul>
+						<li>Used when you want to jump to a specific stage. Note that you can't set a map record without restarting the map from the beginning, but you can set stage records in this way.</li>
+						<li>Open the chat, and type (without quotes) "/s 2", where 2 is the stage number you want to go to.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6 col-t-12">
+			<h2 id="AdvancedText">Advanced Video Guides</h2>
+			This is another video by SurfKultur. It goes over ramp strafing, an advanced technique used when you have to move quickly between two parallel ramps. He breaks it down much better than I did. It is a useful technique worth learning, and relatively easy compared to something like air strafing.
+			<div class="youTubeWrapper">
+				<iframe width="560" height="349" src="https://www.youtube.com/embed/OhWI3RQrFxY" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<br>
+			This is a guide all about how to start the map. You can't always win the map at the start, but getting a bad one will certainly make harder to get a PR the better you get.
+			<div class="youTubeWrapper">
+				<iframe width="560" height="349" src="https://www.youtube.com/embed/O0Q704wWdUA" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<br>
+			The last video is a coaching session, where someone breaks down a players runs through a map. Finding out exactly where time was lost and gained is really helpful.
+			<div class="youTubeWrapper">
+				<iframe width="560" height="349" src="https://www.youtube.com/embed/TwWxKQdlcwo" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="col-6 col-t-12">
+			<h2 id="AdvancedVideo">Advanced Text Guides</h2>
+			<p>
+				There are fewer advanced text guides then there are beginner, it seems like more advanced surfers would rather make a video to show the nuances of advanced technique rather than write it down. I can however reccommend <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=710182259" title="CS:GO Advanced Guide">this guide</a> by Darth Elmo. As he mentions, it is a remake of an onld CS:Source guide, and contains many useful tidbits of knowledge with a few video links as well.
+			</p>
+		</div>
+	</div>
+	</main>
+	<footer>
+	<div class="container">
+		<!-- Facebook Integration. Code from https://developers.facebook.com/docs/plugins/like-button/ -->
+		<div class="fb-like" 
+			data-href="https://developers.facebook.com/docs/plugins/" 
+			data-width="" 
+			data-layout="button" 
+			data-action="like" 
+			data-size="small" 
+			data-show-faces="true" 
+			data-share="true">
+		</div>
+		<!-- Twitter integration, modified from https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1-->
+		<a class="twitter-share-button"
+			href="https://twitter.com/intent/tweet"
+			data-size="large"
+			data-text="Spread the word about SurfsDown!"
+			data-url="http://student.athabascau.ca/~matthewst49/Index.html"
+			data-hashtags="csgo,csgosurfing"
+			data-related=",twitter">
+			Tweet
+		</a>
+		<!-- Google Translate -->
+		<div id="google_translate_element"></div>
+	</div> <!-- end container -->
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<a href="Support.html" title="Link to site support">Support</a>
+				<br>Author: Matthew Stepan
+				<br>Last Updated: September 7, 2019
+			</div>
+		</div>
+	</footer>
+		<script type="text/javascript" src="JS/Menu.js"></script>
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/styleSwitcher.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#themepick').styleSwitcher();
+	})
+	</script>
+	<script type="text/javascript" src="JS/googleTranslate.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+</body>
+</html>

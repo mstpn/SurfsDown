@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<html lang=”en”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/customstyles/StyleSheet.css">
+	<title>Interactive Game</title>
+</head>
+<body>
+	<nav role="navigation">
+			<a href="Index.html" title="Link to the SurfsDown homepage">Home</a>
+			<a href="WhatIsSurfing.html" title="Link to What is Surfing page">What is Surfing?</a>
+			<button class="dropdown-btn">Getting Started
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="GettingStarted.html" title="Link to Getting Started page">The Basics</a>
+				<button class="dropdown-btn">Guides
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="GameSettings.html" title="Link to Game Settings and Servers">Game Settings &amp; Servers</a>
+					<a href="BeginnersGuide.html" title="Link to Beginners Guide">Beginners Guide</a>
+				</div>
+			</div>
+			<a href="Game.html" title="Link to the page containing a JavaScript Game">Interactive Game</a>
+			<button class="dropdown-btn">How To Improve
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Improving.html" title="Link to page on how to improve at surfing">Improving at Surfing</a>
+				<button class="dropdown-btn">Inside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="InsideTheGame.html" title="Link to Improving Inside the Game">In-Game Improvement</a>	
+				</div>
+				<button class="dropdown-btn">Outside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="OutsideTheGame.html" title="Link to Improving Outside the Game">External Improvement</a>
+				</div>
+			</div>	
+			<a href="ServerList.html" title="Link to list of Surf servers">Server List</a>
+			<button class="dropdown-btn">Related Topics
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Related.html" title="Link to page with topics tangentially related to Surfing">Surf Related</a>
+				<button class="dropdown-btn">Topics
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="MapMaking.html" title="Link to Map Making">CS:GO Map Making</a>
+					<a href="InCSGO.html" title="Link to Related Topics inside CS:GO">In-Game</a>
+					<a href="OutsideCSGO.html" title="Link Related Topics outside CS:GO">Outside CS:GO</a>
+				</div>	
+			</div>
+	</nav>
+	<main role="main">
+		<a href="Index.html"><img src="Images/SurfsDownLogo1920w250h.jpg" width="1900" alt="Banner Logo for SurfsDown Site"></a>
+		<div class="topbar">
+			<div class="menu-btn" onclick="toggleNav(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<select name="themepick" id="themepick" title="Cookies must be enabled for this site to switch themes">
+	  			<option value="StyleSheet" selected>Dark Theme</option>
+				<option value="CompatibilityStyleSheet">Compatibility Theme</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<h1>Surfing Minigame</h1>
+				<p>
+					This page contains a JavaScript game that will teach you the basics of surfing. It is a top down version of a simplified surf map, where your goal is to use the A & D keys to practice sticking to ramps, building speed, and moving your character. 
+				</p>
+				<p>
+					If you've stumbled across this game and don't know the first thing about surfing, I reccommend checking out <a href="https://www.youtube.com/embed/XIcs6Hw4WhQ?start=12" title="Surf_Kitsune2 level showcase" target="_blank">this video</a> to see what surfing <em>is</em> about. Then check out <a href="https://youtu.be/E3tys016mwg?" title="Beginner surf guide" target="_blank">this one</a>, up until he mentions crouching at ~1:40, to understand the basic controls. For this game, all you need to know is holding A or D to stick to a ramp and build your speed.
+				</p>
+				<p>
+					You build speed by RIDING INTO THE SIDE OF A RAMP while holding either the A or D keys. You then continue to HOLD THE KEY you stuck to the ramp with until	you reach the end of the ramp, OR until you press the opposite key to unstick yourself and move in the other direction. Your goal is to hit as many ramps as possible in order to keep your speed, and navigate to the end of the level.
+				</p>
+				<p>
+					The game is 1000x750 pixels in size, so make sure you use a large enough window to play. If you are having performance issues, try closing the number of open tabs you have in your browser and then refresh the page. Check out the controls below the game to find out how to get play, or press W to jump right in! 
+				</p>
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-6 col-t-6">
+				<canvas id="gameCanvas" width="1000" height="750"></canvas>
+			</div>
+		</div>
+		<div class="row gamecontrols">
+			<div class="col-12 col-t-12">
+				<h2>Controls</h2>
+				<p>
+					<h3>Movement Keys</h3>
+					<dl>
+						<dt>W</dt>
+							<dd>PRESS TO START THE GAME</dd>
+							<dd>Don't hold it down, it does nothing after the start!</dd>
+						<dt>A</dt>
+							<dd>Move your character LEFT</dd>
+							<dd>Hold to ride the RIGHT SIDE of a ramp</dd>
+						<dt>D</dt>
+							<dd>Move your character RIGHT</dd>
+							<dd>Hold to ride the LEFT SIDE of a ramp</dd>
+					</dl>
+					<h3>Other Keys</h3>
+						<dt>R</dt>
+							<dd>Restarts the game</dd>
+							<dd>Randomly generates a new level</dd>
+							<dd>Does not save your score</dd>
+							<dd>High score not erased</dd>
+						<dt>F5</dt>
+							<dd>Quick shortcut (on most browsers/OS) to refresh your page</dd>
+							<dd>Do this if your game is running slowly for some reason</dd>
+							<dd>Your high score will be erased!</dd>
+				</p>
+				<h2>Score Rank List</h2>
+				<p>
+					<dl>
+						<dt>0 &lt; 99 </dt>
+							<dd>Noob</dd>
+						<dt>100 &lt; 249</dt>
+							<dd>Rookie</dd>
+						<dt>250 &lt; 399</dt>
+							<dd>Intermediate</dd>
+						<dt>400 &lt; 424</dt>
+							<dd>Surfer</dd>
+						<dt>425 &lt; 449</dt>
+							<dd>Expert</dd>	
+						<dt>450+</dt>
+							<dd>??????????</dd>																																			
+				</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+	<div class="container">
+		<!-- Facebook Integration. Code from https://developers.facebook.com/docs/plugins/like-button/ -->
+		<div class="fb-like" 
+			data-href="https://developers.facebook.com/docs/plugins/" 
+			data-width="" 
+			data-layout="button" 
+			data-action="like" 
+			data-size="small" 
+			data-show-faces="true" 
+			data-share="true">
+		</div>
+		<!-- Twitter integration, modified from https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1-->
+		<a class="twitter-share-button"
+			href="https://twitter.com/intent/tweet"
+			data-size="large"
+			data-text="Spread the word about SurfsDown!"
+			data-url="http://student.athabascau.ca/~matthewst49/Index.html"
+			data-hashtags="csgo,csgosurfing"
+			data-related=",twitter">
+			Tweet
+		</a>
+		<!-- Google Translate -->
+		<div id="google_translate_element"></div>
+	</div> <!-- end container -->
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<a href="Support.html" title="Link to site support">Support</a>
+				<br>Author: Matthew Stepan
+				<br>Last Updated: September 7, 2019
+			</div>
+		</div>
+	</footer>
+		<script type="text/javascript" src="JS/Menu.js"></script>
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/styleSwitcher.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#themepick').styleSwitcher();
+	})
+	</script>
+	<script type="text/javascript" src="JS/Game.js"></script>
+	<script type="text/javascript" src="JS/googleTranslate.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html lang=”en”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/customstyles/StyleSheet.css">
+	<title>Game Settings</title>
+</head>
+<body>
+	<nav role="navigation">
+			<a href="Index.html" title="Link to the SurfsDown homepage">Home</a>
+			<a href="WhatIsSurfing.html" title="Link to What is Surfing page">What is Surfing?</a>
+			<button class="dropdown-btn">Getting Started
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="GettingStarted.html" title="Link to Getting Started page">The Basics</a>
+				<button class="dropdown-btn">Guides
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="GameSettings.html" title="Link to Game Settings and Servers">Game Settings &amp; Servers</a>
+					<a href="BeginnersGuide.html" title="Link to Beginners Guide">Beginners Guide</a>
+				</div>
+			</div>
+			<a href="Game.html" title="Link to the page containing a JavaScript Game">Interactive Game</a>
+			<button class="dropdown-btn">How To Improve
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Improving.html" title="Link to page on how to improve at surfing">Improving at Surfing</a>
+				<button class="dropdown-btn">Inside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="InsideTheGame.html" title="Link to Improving Inside the Game">In-Game Improvement</a>	
+				</div>
+				<button class="dropdown-btn">Outside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="OutsideTheGame.html" title="Link to Improving Outside the Game">External Improvement</a>
+				</div>
+			</div>	
+			<a href="ServerList.html" title="Link to list of Surf servers">Server List</a>
+			<button class="dropdown-btn">Related Topics
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Related.html" title="Link to page with topics tangentially related to Surfing">Surf Related</a>
+				<button class="dropdown-btn">Topics
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="MapMaking.html" title="Link to Map Making">CS:GO Map Making</a>
+					<a href="InCSGO.html" title="Link to Related Topics inside CS:GO">In-Game</a>
+					<a href="OutsideCSGO.html" title="Link Related Topics outside CS:GO">Outside CS:GO</a>
+				</div>	
+			</div>
+	</nav>
+	<main role="main">
+		<a href="Index.html"><img src="Images/SurfsDownLogo1920w250h.jpg" width="1900" alt="Banner Logo for SurfsDown Site"></a>
+		<div class="topbar">
+			<div class="menu-btn" onclick="toggleNav(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<select name="themepick" id="themepick" title="Cookies must be enabled for this site to switch themes">
+	  			<option value="StyleSheet" selected>Dark Theme</option>
+				<option value="CompatibilityStyleSheet">Compatibility Theme</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<h1>Game Settings & Servers</h1>
+				<h2>Game Settings</h2>
+				<p>
+					Before you start to surf, there are a few things that you can do to improve your experience in the game.
+				</p>
+				<h3>Enable Developer Console</h3>
+				<p>
+					Enabling the developer console is important when surfing, as there are sometimes commands that you need to enter. Entering the command, without quotes, "voice_enable 0", into the console will remove all player microphone communication. Helpful if you don't want to listen to what is effectively a group call with 30 people.
+				</p>
+				<h3>Video Settings</h3>
+				<p>
+					<ul>
+						<li>Disable motion blur</li>
+						<li>Disable Vsync if your computer runs CSGO at a higher FPS then your framrate, or else, play around and see what works best for you</li>
+						<li>Lower graphics settings until your game feels "smooth". For me, this means a minmum of 100FPS</li>
+					</ul>
+				</p>
+				<h3>Other Settings</h3>
+				<p>
+					<ul>
+						<li>Enable direct input for your mouse</li>
+						<li>Consider rebinding keys, such as the communication keys on Z, X, and C, so that you don't accidentally finger fumble them in the middle of a map</li>
+					</ul>
+				</p>
+				<h2>Servers</h2>
+				<p>
+					What server you join is going to dictate a lot of the experience that you have in the game. Luckily, it is easy to swap to another if you don't like what you start on. My suggestion is to start on a server that advertises Tier 1 maps, or "Beginner". Surf difficulty ramps up fast, intermediate is not something that you will be able to finish for a significant amount of time. Feel free to jump into a high tier or Advanced server and see how far you get! It's always a good time to type "!spec" into the chat box, and follow the on screen prompts to view other players. Watching advanced surfers fly through the levels makes for great entertainment, not to mention learning on how best to ride ramps and navigate new maps.
+				</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+	<div class="container">
+		<!-- Facebook Integration. Code from https://developers.facebook.com/docs/plugins/like-button/ -->
+		<div class="fb-like" 
+			data-href="https://developers.facebook.com/docs/plugins/" 
+			data-width="" 
+			data-layout="button" 
+			data-action="like" 
+			data-size="small" 
+			data-show-faces="true" 
+			data-share="true">
+		</div>
+		<!-- Twitter integration, modified from https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1-->
+		<a class="twitter-share-button"
+			href="https://twitter.com/intent/tweet"
+			data-size="large"
+			data-text="Spread the word about SurfsDown!"
+			data-url="http://student.athabascau.ca/~matthewst49/Index.html"
+			data-hashtags="csgo,csgosurfing"
+			data-related=",twitter">
+			Tweet
+		</a>
+		<!-- Google Translate -->
+		<div id="google_translate_element"></div>
+	</div> <!-- end container -->
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<a href="Support.html" title="Link to site support">Support</a>
+				<br>Author: Matthew Stepan
+				<br>Last Updated: September 7, 2019
+			</div>
+		</div>
+	</footer>
+		<script type="text/javascript" src="JS/Menu.js"></script>
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/styleSwitcher.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#themepick').styleSwitcher();
+	})
+	</script>
+	<script type="text/javascript" src="JS/googleTranslate.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+</body>
+</html>

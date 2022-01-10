@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang=”en”>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/customstyles/StyleSheet.css">
+	<title>Home</title>
+</head>
+<body>
+	<nav role="navigation">
+			<a href="Index.html" title="Link to the SurfsDown homepage">Home</a>
+			<a href="WhatIsSurfing.html" title="Link to What is Surfing page">What is Surfing?</a>
+			<button class="dropdown-btn">Getting Started
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="GettingStarted.html" title="Link to Getting Started page">The Basics</a>
+				<button class="dropdown-btn">Guides
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="GameSettings.html" title="Link to Game Settings and Servers">Game Settings &amp; Servers</a>
+					<a href="BeginnersGuide.html" title="Link to Beginners Guide">Beginners Guide</a>
+				</div>
+			</div>
+			<a href="Game.html" title="Link to the page containing a JavaScript Game">Interactive Game</a>
+			<button class="dropdown-btn">How To Improve
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Improving.html" title="Link to page on how to improve at surfing">Improving at Surfing</a>
+				<button class="dropdown-btn">Inside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="InsideTheGame.html" title="Link to Improving Inside the Game">In-Game Improvement</a>	
+				</div>
+				<button class="dropdown-btn">Outside the Game
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="OutsideTheGame.html" title="Link to Improving Outside the Game">External Improvement</a>
+				</div>
+			</div>	
+			<a href="ServerList.html" title="Link to list of Surf servers">Server List</a>
+			<button class="dropdown-btn">Related Topics
+				<div class="arrow-down"></div>
+			</button>
+			<div class="dropdown-container">
+				<a href="Related.html" title="Link to page with topics tangentially related to Surfing">Surf Related</a>
+				<button class="dropdown-btn">Topics
+					<div class="arrow-down"></div>
+				</button>
+				<div class="dropdown-container">
+					<a href="MapMaking.html" title="Link to Map Making">CS:GO Map Making</a>
+					<a href="InCSGO.html" title="Link to Related Topics inside CS:GO">In-Game</a>
+					<a href="OutsideCSGO.html" title="Link Related Topics outside CS:GO">Outside CS:GO</a>
+				</div>	
+			</div>
+	</nav>
+	<main role="main">
+		<a href="Index.html"><img src="Images/SurfsDownLogo1920w250h.jpg" width="1900" alt="Banner Logo for SurfsDown Site"></a>
+		<div class="topbar">
+			<div class="menu-btn" onclick="toggleNav(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+			<select name="themepick" id="themepick" title="Cookies must be enabled for this site to switch themes">
+	  			<option value="StyleSheet" selected>Dark Theme</option>
+				<option value="CompatibilityStyleSheet">Compatibility Theme</option>
+			</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<h1>Welcome to SurfsDown - CS:GO Surfing Megasite</h1>
+				<p>
+					There are few if any websites that serve as a compendium for understanding, learning, and improving in surfing, as well as having an aggregate list of popular surf servers. Most pages will do one of these things, but not <em>all</em>, and it is my motivation in making this website to put together all the knowledge I have found about surfing into one convenient location.
+				</p>
+				<p>
+					Click on one of the pictures below to jump to a section of the page. Make sure to try out the game before you leave!
+				</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-4 col-t-4">
+				<a href="WhatIsSurfing.html"><img src="Images/WhatIsSurfing300x169.jpg" width="300" alt="What is Surfing page Logo"></a>
+			</div>
+			<div class="col-4 col-t-4">
+				<a href="GettingStarted.html"><img src="Images/GettingStarted300x169.jpg" width="300" alt="Getting Started page Logo"></a>
+			</div>
+			<div class="col-4 col-t-4">
+				<a href="Improving.html"><img src="Images/Improving300x169.jpg" width="300" alt="Improving page Logo"></a>
+			</div>
+			<div class="col-4 col-t-4">
+				<a href="ServerList.html"><img src="Images/ServerList300x169.jpg" width="300" alt="Server List page Logo"></a>
+			</div>
+			<div class="col-4 col-t-4">
+				<a href="Game.html"><img src="Images/Game300x169.jpg" width="300" alt="Game page Logo"></a>
+			</div>
+			<div class="col-4 col-t-4">
+				<a href="Related.html"><img src="Images/Related300x169.jpg" width="300" alt="Related page Logo"></a>
+			</div>
+		</div>
+	</main>
+	<footer>
+	<div class="container">
+		<!-- Facebook Integration. Code from https://developers.facebook.com/docs/plugins/like-button/ -->
+		<div class="fb-like" 
+			data-href="https://developers.facebook.com/docs/plugins/" 
+			data-width="" 
+			data-layout="button" 
+			data-action="like" 
+			data-size="small" 
+			data-show-faces="true" 
+			data-share="true">
+		</div>
+		<!-- Twitter integration, modified from https://developer.twitter.com/en/docs/twitter-for-websites/tweet-button/guides/parameter-reference1-->
+		<a class="twitter-share-button"
+			href="https://twitter.com/intent/tweet"
+			data-size="large"
+			data-text="Spread the word about SurfsDown!"
+			data-url="http://student.athabascau.ca/~matthewst49/Index.html"
+			data-hashtags="csgo,csgosurfing"
+			data-related=",twitter">
+			Tweet
+		</a>
+		<!-- Google Translate -->
+		<div id="google_translate_element"></div>
+	</div> <!-- end container -->
+		<div class="row">
+			<div class="col-12 col-t-12">
+				<a href="Support.html" title="Link to site support">Support</a>
+				<br>Author: Matthew Stepan
+				<br>Last Updated: September 7, 2019
+			</div>
+		</div>
+	</footer>
+		<script type="text/javascript" src="JS/Menu.js"></script>
+	<script type="text/javascript" src="JS/jquery.js"></script>
+	<script type="text/javascript" src="JS/styleSwitcher.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#themepick').styleSwitcher();
+	})
+	</script>
+	<script type="text/javascript" src="JS/googleTranslate.js"></script>
+	<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+	<script id="twitter-wjs" type="text/javascript" async defer src="//platform.twitter.com/widgets.js"></script>
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+</body>
+</html>

@@ -1,0 +1,464 @@
+/*
+This stylesheet is a "compatibility" style sheet. It is an alternative to the default dark theme of the site. It is intended to help users with color blindness
+and dyslexia by changing the color palette and font used in the site.
+
+Unless otherwise cited, I used https://www.w3schools.com/css/default.asp for learning about CSS. Some of the code may be similar, but I have tried to modify
+ it in a way that suits my site best. 
+*/
+
+
+/*Import custom font*/
+@font-face { 
+	font-family: open-dyslexic; 
+	src: url("OpenDyslexic-Regular.otf") format("opentype"); 
+}
+
+/*Site wide changes*/
+html{
+	background-color: rgb(210,201,179);
+	color: black;
+	font-family: open-dyslexic;
+	font-size: 16px;
+}
+
+/*Link styling*/
+a{
+	color: rgb(46,54,73);
+	font-weight: bold;
+}
+#IPlink{
+	font-weight: bold;
+	color: rgb(46,54,73);
+}
+
+/*Image modifications*/
+/*Header image*/
+img[alt="Banner Logo for SurfsDown Site"] {
+	width: 100%;
+	height: auto;
+}
+/*All images*/
+img{
+	max-width:100%;
+	height:auto;
+}
+
+/*Google Translate*/
+#google_translate_element{
+	display: inline-block;
+	transform: translate(100px,-8px);
+	overflow: auto;
+}
+
+/*select dropdown list styling*/
+select{
+	font-family: open-dyslexic;
+	background-color: rgb(210,201,179);
+	transform: translate(0px,10px);
+	display: inline-block;
+  	cursor: pointer;
+	float: right;
+	overflow: auto;
+}
+
+/*Topbar styling */
+.topbar{
+	position: sticky;
+	top: 0;
+	background-color: rgb(210,201,179);
+	z-index:10;
+}
+/* Portions of code for the horizontal-list were taken from https://www.w3schools.com/css/css_navbar.asp */
+/* Unordered list */
+.topbar ul { 
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+/* List items */
+.topbar li {
+	float: left;
+}
+/* Links in list */
+.topbar li a {
+	display: block;
+	color: rgb(46,54,73);
+	font-weight: bold;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	letter-spacing: 3px;
+}
+/* Mouseover changes */
+.topbar li a:hover:not(.active) {
+	background-color: #111;
+}
+.topbar .active {
+	background-color: rgb(210,201,179);
+	font-weight: bold;
+	color: rgb(46,54,73);
+}
+
+ /*General List styling*/
+ol{
+	list-style-type:upper-roman;
+}
+
+/*
+	Center the game control descripton on Game.html page
+	Modified code from https://codepen.io/Tipue/pen/sGHuI
+*/
+.gamecontrols{
+	margin: 0 auto;
+	max-width: 400px;
+}
+
+.gamecontrols dt {
+	color: rgb(46,54,73);
+	font-weight: bold;
+}
+
+
+/*Hidden sections*/
+/*Idea how to hide sections on hover from this thread https://stackoverflow.com/questions/31549280/show-hidden-text-on-hover-css*/
+.hideme{
+	display:none;
+	border-style:dotted;
+	border-color:rgb(46,54,73);
+	font-weight: bold;
+	padding: 5px 15px 5px 15px;
+}
+.hide:hover .hideme{
+	display:block;
+}
+
+/*Footer social media and translate container*/
+.container{
+	display:flex;
+	flex-direction: row;
+}
+
+/*Google Translate*/
+#google_translate_element{
+	display: inline-block;
+	transform: translate(0px,60px);
+	overflow: auto;
+	order: 1;
+}
+
+.twitter-share-button{
+	display: inline-block;
+	transform: translate(20px,60px);
+	overflow: auto;
+	order: 3;
+}
+
+/*Facebook like & share*/
+.fb-like{
+	display: inline-block;
+	transform: translate(10px,63px);
+	overflow: auto;
+	order: 2;
+}
+
+/*Footer Styling*/
+footer {
+	text-align: right;
+	font-size: 75%;
+	padding-top: 100px;
+	top: 0;
+	right: 0;
+	opacity: 0.5;
+	transition: opacity 2s;
+}
+/*Mouseover styling*/
+footer:hover{
+	opacity: 1.0;
+}
+
+/*Table Styling*/
+/*Table Header styling*/
+.serverlist th{
+	background-color: rgb(172,193,196);
+	font-weight: bold;
+	color: rgb(46,54,73);
+	letter-spacing: 3px;
+	padding:20px;
+}
+/*Table data styling*/
+.serverlist td{
+	padding:20px;
+}
+/*Mouseover styling*/
+.serverlist tr:hover{
+	background-color: rgb(136, 166, 170);
+}
+/*Positioning*/
+.serverlist{
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+/*Form Styling*/
+/*Text & email box styling*/
+input[type=text], input[type=email]{
+	padding: 5px 5px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	-webkit-transition: width .3s ease-in-out;
+	transition: width .3s ease-in-out;
+	width:50%;
+}
+/*Message area*/
+textarea {
+	padding: 5px 5px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	-webkit-transition: width .3s ease-in-out;
+	transition: width .3s ease-in-out;
+	width:50%;
+	resize:vertical;
+}
+/*Text and email focus styling*/
+input[type=text]:focus, input[type=email]:focus {
+	width: 100%;
+	background-color:rgb(172,193,196);
+	font-weight: bold;
+}
+/*Message area focus styling*/
+textarea:focus {
+	width: 100%;
+	background-color:rgb(172,193,196);
+	font-weight: bold;
+}
+/*Submit button styling*/
+input[type=submit]{
+	background-color:rgb(172,193,196);
+	font-weight: bold;
+	border:none;
+	padding: 10px 15px;
+	letter-spacing: 3px;
+	cursor: pointer;
+}
+/*Submit mouseover styling*/
+input[type=submit]:hover {
+  background-color: rgb(136, 166, 170);
+}
+
+/*Responsive CSS Styling https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+*{
+	box-sizing: border-box;
+}
+/*Mobile First*/
+[class*="col-"] {
+	float: left;
+	padding: 15px;
+	width:100%;
+}
+/* For tablets: */
+@media only screen and (min-width: 600px) {
+	.col-t-1 {width: 8.33%;}
+	.col-t-2 {width: 16.66%;}
+	.col-t-3 {width: 25%;}
+	.col-t-4 {width: 33.33%;}
+	.col-t-5 {width: 41.66%;}
+	.col-t-6 {width: 50%;}
+	.col-t-7 {width: 58.33%;}
+	.col-t-8 {width: 66.66%;}
+	.col-t-9 {width: 75%;}
+	.col-t-10 {width: 83.33%;}
+	.col-t-11 {width: 91.66%;}
+	.col-t-12 {width: 100%;}
+}
+/*Desktop*/
+@media only screen and (min-width: 992px) {
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/*Responsive YouTube embeds*/
+/*Help with portions of code for responsive YouTube videos https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php */
+.youTubeWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.youTubeWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*
+Center the HTML canvas, code from user Marco Luglio
+in the thread:https://stackoverflow.com/questions/5127937/how-to-center-canvas-in-html5
+ */
+canvas {
+    padding-left: 50%;
+    padding-right: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+/*-----------------------------------BEGIN MENU STYLING------------------------------------*/
+/*--- DROPDOWN IN SIDE NAV ---*/
+/* Elements in whole or in part from https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp */
+/* Fixed nav, full height */
+nav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: rgb(172,193,196);
+  overflow-x: hidden;
+  padding-top: 25px;
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden; Disable horizontal scroll
+}
+
+/* Style the nav links and the dropdown button */
+nav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 3px;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+button{
+	font-family: open-dyslexic;
+	font-size: 16px;
+}
+
+/* On mouse-over */
+nav a:hover, .dropdown-btn:hover {
+  color: rgb(46,54,73);
+}
+
+/* Mouse-over if already Active*/
+.active:hover {
+	color: rgb(50,50,50);
+}
+
+/* Main content */
+main {
+	transition: margin-left .5s;
+	padding: 20px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: rgb(210,201,179);
+  color: rgb(46,54,73);
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: rgb(136, 166, 170);
+  padding-left: 8px;
+}
+
+
+/* Arrow styling https://www.w3schools.com/howto/howto_css_arrows.asp */
+/* Down Arrow Icon*/
+.arrow-down {
+	border: solid black;
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 4px;
+	float: right;
+    transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transition:0.2s;
+}
+/* Change to Up Arrow*/
+.change-arrow .arrow-down {
+	border: solid rgb(50,50,50);
+	border-width: 0 3px 3px 0;
+	display: inline-block;
+	padding: 4px;
+	float: right;
+    transform: rotate(-135deg);
+	-webkit-transform: rotate(-135deg); 
+}
+/*--- End Dropdown ---*/
+
+/*--- OFF CANVAS MENU ---*/
+/* Elements in whole or in part from https://www.w3schools.com/howto/howto_js_off-canvas.asp*/
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  nav {padding-top: 15px;}
+  nav a {font-size: 18px;}
+}
+
+/*--- END OFF CANVAS MENU ---*/
+
+/*--- MENU BUTTON ---*/
+/* Elements in whole or in part from https://www.w3schools.com/howto/howto_css_menu_icon.asp*/
+
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(46,54,73);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	transform: rotate(-45deg) translate(-9px, 6px) ;
+    background-color: rgb(46,54,73);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	transform: rotate(45deg) translate(-8px, -8px) ;
+	background-color: rgb(46,54,73);
+}
+
+/*--- END ANIMATED MENU BUTTON ---*/
+
+
+
